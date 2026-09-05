@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Abhishesh Kumar — Senior Operations Manager</title>
+<meta name="description" content="Operations &amp; Strategy leader with 6+ years scaling placement, program and business operations. Placement ops for 2,200+ learners, 1,000+ placements enabled, ₹2.5 Cr+ monthly revenue operations supported.">
+<meta property="og:title" content="Abhishesh Kumar — Senior Operations Manager">
+<meta property="og:description" content="Operations &amp; Strategy leader. Process excellence, AI-driven automation, operational governance.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23ED0331'/><text x='50' y='70' font-size='58' font-family='sans-serif' font-weight='800' fill='white' text-anchor='middle'>A</text></svg>">
+<style>
+*,*::before,*::after{box-sizing:border-box}
+:root{
+  --bg:#08080a; --bg2:#0c0c0f; --surface:#111114; --surface2:#16161a;
+  --line:rgba(255,255,255,.08); --line2:rgba(255,255,255,.14);
+  --fg:#fafafa; --muted:#a1a1aa; --dim:#71717a;
+  --accent:#ed0331; --accent2:#e11d48; --accent-soft:rgba(237,3,49,.10);
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --r-sm:8px; --r-md:12px; --r-lg:18px; --r-full:999px;
+  --max:1140px;
+  --h1:clamp(2.6rem,7vw,5.1rem); --h2:clamp(2rem,4.4vw,3.2rem); --h3:clamp(1.15rem,2vw,1.5rem);
+}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+h1,h2,h3,h4,.dsp{font-family:Outfit,system-ui,sans-serif;font-weight:800;letter-spacing:-.03em;line-height:1.04;margin:0}
+p{margin:0}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+::selection{background:var(--accent);color:#fff}
+.wrap{width:min(100% - 2.5rem,var(--max));margin-inline:auto}
+.acc{color:var(--accent)}
+.sec{padding:clamp(4.5rem,9vw,8rem) 0;position:relative}
+.rule{height:1px;background:var(--line);width:100%}
+
+/* ---------- scroll progress ---------- */
+#prog{position:fixed;top:0;left:0;height:2px;width:0;background:linear-gradient(90deg,var(--accent),#ff6b8a);z-index:120;transition:width .1s linear}
+
+/* ---------- nav ---------- */
+nav{position:fixed;inset:0 0 auto;z-index:110;background:rgba(8,8,10,.62);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid transparent;transition:border-color .3s var(--ease),background .3s var(--ease)}
+nav.on{border-bottom-color:var(--line);background:rgba(8,8,10,.85)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{font-family:Outfit;font-weight:800;font-size:1.05rem;letter-spacing:-.02em;display:flex;align-items:center;gap:.55rem}
+.brand i{width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 0 rgba(237,3,49,.6);animation:ping 2.6s var(--ease) infinite}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(237,3,49,.55)}70%{box-shadow:0 0 0 11px rgba(237,3,49,0)}100%{box-shadow:0 0 0 0 rgba(237,3,49,0)}}
+.nav-links{display:flex;gap:2rem;align-items:center;font-size:.83rem;font-weight:500;color:var(--muted)}
+.nav-links a{position:relative;padding:.2rem 0;transition:color .22s ease}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-3px;height:1.5px;width:0;background:var(--accent);transition:width .26s var(--ease)}
+.nav-links a:hover,.nav-links a.active{color:var(--fg)}
+.nav-links a:hover::after,.nav-links a.active::after{width:100%}
+.nav-cta{background:var(--accent);color:#fff;padding:.52rem 1.05rem;border-radius:var(--r-full);font-size:.8rem;font-weight:600;font-family:Outfit;letter-spacing:.01em;transition:transform .26s var(--ease),background .22s ease}
+.nav-cta:hover{background:#ff1744;transform:translateY(-2px)}
+.burger{display:none;width:38px;height:38px;border:1px solid var(--line);border-radius:var(--r-sm);background:none;cursor:pointer;position:relative}
+.burger span{position:absolute;left:10px;width:18px;height:1.6px;background:var(--fg);transition:transform .3s var(--ease),opacity .2s}
+.burger span:nth-child(1){top:13px}.burger span:nth-child(2){top:18.5px}.burger span:nth-child(3){top:24px}
+.burger.x span:nth-child(1){transform:translateY(5.5px) rotate(45deg)}
+.burger.x span:nth-child(2){opacity:0}
+.burger.x span:nth-child(3){transform:translateY(-5.5px) rotate(-45deg)}
+@media(max-width:860px){
+ .nav-links{position:fixed;inset:66px 0 auto;flex-direction:column;gap:0;background:rgba(8,8,10,.97);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);padding:.5rem 1.25rem 1.5rem;transform:translateY(-120%);transition:transform .38s var(--ease);align-items:stretch}
+ .nav-links.open{transform:translateY(0)}
+ .nav-links a{padding:.85rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+ .nav-links .nav-cta{text-align:center;margin-top:1rem;border-bottom:none;padding:.8rem}
+ .burger{display:block}
+}
+
+/* ---------- hero ---------- */
+.hero{padding-top:clamp(7rem,14vw,9.5rem);padding-bottom:0;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;top:-28%;left:50%;transform:translateX(-50%);width:min(1100px,120vw);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle,rgba(237,3,49,.17),rgba(237,3,49,.05) 42%,transparent 66%);filter:blur(28px);pointer-events:none;animation:aura 9s ease-in-out infinite alternate}
+@keyframes aura{from{opacity:.62;transform:translateX(-50%) scale(.94)}to{opacity:1;transform:translateX(-50%) scale(1.07)}}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:70px 70px;mask-image:radial-gradient(ellipse 78% 58% at 50% 32%,#000 20%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 78% 58% at 50% 32%,#000 20%,transparent 78%);opacity:.5;pointer-events:none}
+.hero-in{position:relative;display:grid;grid-template-columns:1.55fr .85fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+@media(max-width:900px){.hero-in{grid-template-columns:1fr;gap:2.75rem}}
+.pill{display:inline-flex;align-items:center;gap:.6rem;border:1px solid var(--line2);background:rgba(237,3,49,.07);color:#ffd9e0;padding:.42rem 1rem;border-radius:var(--r-full);font-size:.665rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;font-family:Outfit;margin-bottom:1.6rem}
+.pill b{color:var(--accent);font-weight:700}
+h1{font-size:var(--h1);font-weight:900}
+.hero-sub{color:var(--muted);font-size:clamp(.98rem,1.5vw,1.12rem);max-width:47ch;margin-top:1.5rem;font-weight:300}
+.hero-sub strong{color:var(--fg);font-weight:500}
+.btns{display:flex;gap:.85rem;flex-wrap:wrap;margin-top:2.3rem}
+.btn{display:inline-flex;align-items:center;gap:.55rem;padding:.92rem 1.6rem;border-radius:var(--r-full);font-family:Outfit;font-weight:600;font-size:.9rem;border:1px solid var(--line2);transition:transform .26s var(--ease),background .22s ease,border-color .22s ease}
+.btn:hover{transform:translateY(-3px)}
+.btn-p{background:var(--accent);border-color:var(--accent);color:#fff;box-shadow:0 10px 34px -12px rgba(237,3,49,.75)}
+.btn-p:hover{background:#ff1744}
+.btn-g:hover{border-color:var(--line2);background:rgba(255,255,255,.05)}
+.btn svg{width:16px;height:16px;flex:none}
+
+/* portrait */
+.portrait{position:relative;justify-self:center;width:min(300px,72vw);aspect-ratio:1}
+.portrait::after{content:"";position:absolute;inset:-14%;border-radius:50%;background:conic-gradient(from 0deg,var(--accent),transparent 28%,transparent 72%,var(--accent));opacity:.5;filter:blur(24px);animation:spin 14s linear infinite;z-index:0}
+@keyframes spin{to{transform:rotate(360deg)}}
+.portrait-in{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;overflow:hidden;border:1px solid var(--line2);background:var(--surface);display:grid;place-items:center}
+.portrait-in::before{content:"AK";position:absolute;font-family:Outfit;font-weight:800;font-size:4.6rem;color:rgba(255,255,255,.14);letter-spacing:-.04em}
+.portrait-in img{position:relative;z-index:1;width:100%;height:100%;object-fit:cover;object-position:50% 20%;transform:scale(1.85);transform-origin:50% 22%;filter:saturate(1.06) contrast(1.04);transition:transform .7s var(--ease)}
+.portrait:hover .portrait-in img{transform:scale(1.95)}
+.badge{position:absolute;z-index:2;background:rgba(12,12,15,.92);backdrop-filter:blur(10px);border:1px solid var(--line2);border-radius:var(--r-full);padding:.5rem .95rem;font-size:.7rem;font-family:Outfit;font-weight:600;letter-spacing:.04em;display:flex;align-items:center;gap:.45rem;white-space:nowrap}
+.badge i{width:6px;height:6px;border-radius:50%;background:#22c55e;box-shadow:0 0 8px #22c55e}
+.badge.b1{bottom:9%;left:-14%}
+.badge.b2{top:7%;right:-10%}
+@media(max-width:900px){.badge.b1{left:0}.badge.b2{right:0}}
+
+/* hero stat strip */
+.strip{margin-top:clamp(3.5rem,7vw,5.5rem);border-top:1px solid var(--line);border-bottom:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}
+.strip div{padding:1.7rem 1.4rem;border-left:1px solid var(--line)}
+.strip div:first-child{border-left:none}
+.strip .n{font-family:Outfit;font-weight:800;font-size:clamp(1.5rem,2.7vw,2.1rem);letter-spacing:-.03em}
+.strip .l{font-size:.645rem;letter-spacing:.15em;text-transform:uppercase;color:var(--dim);margin-top:.3rem;font-weight:500}
+@media(max-width:760px){.strip{grid-template-columns:1fr 1fr}.strip div:nth-child(3){border-left:none}.strip div:nth-child(n+3){border-top:1px solid var(--line)}}
+
+/* ---------- marquee ---------- */
+.mq{overflow:hidden;border-bottom:1px solid var(--line);padding:1.15rem 0;background:var(--bg2);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+.mq-t{display:flex;gap:2.75rem;width:max-content;animation:mqs 34s linear infinite}
+.mq:hover .mq-t{animation-play-state:paused}
+@keyframes mqs{to{transform:translateX(-50%)}}
+.mq-t span{font-family:Outfit;font-weight:600;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;color:var(--dim);display:flex;align-items:center;gap:2.75rem;white-space:nowrap}
+.mq-t span::after{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.65}
+
+/* ---------- section heads ---------- */
+.eyebrow{font-family:Outfit;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700;display:flex;align-items:center;gap:.7rem;margin-bottom:1.1rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--accent)}
+h2{font-size:var(--h2)}
+.lead{color:var(--muted);max-width:58ch;margin-top:1.1rem;font-weight:300}
+.head-row{display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;margin-bottom:3.2rem}
+.head-row>div:first-child{flex:1 1 380px}
+.head-row .lead{flex:1 1 330px;max-width:44ch;margin-top:0}
+
+/* ---------- metrics ---------- */
+.metrics{display:grid;grid-template-columns:1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
+@media(min-width:560px){.metrics{grid-template-columns:1fr 1fr}}
+@media(min-width:900px){.metrics{grid-template-columns:repeat(3,1fr)}}
+.metric{background:var(--surface);padding:2rem 1.6rem;position:relative;transition:background .3s var(--ease)}
+.metric:hover{background:var(--surface2)}
+.metric::before{content:"";position:absolute;top:0;left:0;height:2px;width:0;background:var(--accent);transition:width .55s var(--ease)}
+.metric:hover::before{width:100%}
+.metric .n{font-family:Outfit;font-weight:800;font-size:clamp(2rem,3.6vw,2.85rem);letter-spacing:-.035em;line-height:1}
+.metric .t{font-family:Outfit;font-weight:600;font-size:.9rem;margin-top:.7rem}
+.metric .d{font-size:.795rem;color:var(--dim);margin-top:.3rem;font-weight:300;line-height:1.5}
+
+/* ---------- pipeline ---------- */
+.flow{border:1px solid var(--line);border-radius:var(--r-md);background:linear-gradient(180deg,var(--surface),var(--bg2));padding:clamp(1.6rem,3.5vw,2.6rem);overflow-x:auto}
+.flow-row{display:flex;align-items:stretch;gap:.65rem;min-width:660px}
+.node{flex:1;background:var(--bg);border:1px solid var(--line2);border-radius:var(--r-sm);padding:1.05rem .85rem;text-align:center;position:relative;transition:border-color .28s var(--ease),transform .28s var(--ease)}
+.node:hover{border-color:var(--accent);transform:translateY(-4px)}
+.node .k{font-family:Outfit;font-weight:700;font-size:.815rem}
+.node .s{font-size:.66rem;color:var(--dim);margin-top:.22rem;letter-spacing:.05em;text-transform:uppercase}
+.arrow{display:flex;align-items:center;color:var(--dim);font-size:.9rem}
+.layers{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-top:1.05rem;min-width:660px}
+@media(max-width:700px){.layers{grid-template-columns:1fr}}
+.layer{border:1px dashed rgba(237,3,49,.4);border-radius:var(--r-sm);padding:.9rem 1.05rem;background:var(--accent-soft)}
+.layer b{font-family:Outfit;font-size:.815rem;display:block}
+.layer span{font-size:.735rem;color:var(--muted);font-weight:300}
+
+/* ---------- experience ---------- */
+.tl{position:relative;padding-left:2.1rem}
+.tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--accent),var(--line) 45%,transparent)}
+.job{position:relative;padding-bottom:2.6rem}
+.job::before{content:"";position:absolute;left:-2.1rem;top:.5rem;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);transition:box-shadow .3s var(--ease)}
+.job:hover::before{box-shadow:0 0 0 6px rgba(237,3,49,.16)}
+.job-h{display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;align-items:baseline;cursor:pointer}
+.job-h h3{font-size:var(--h3)}
+.job-co{color:var(--accent);font-weight:600;font-size:.87rem;font-family:Outfit}
+.job-dt{font-size:.72rem;color:var(--dim);letter-spacing:.09em;text-transform:uppercase;white-space:nowrap;font-weight:500}
+.job-body{overflow:hidden;max-height:0;transition:max-height .5s var(--ease),opacity .35s ease;opacity:0}
+.job.open .job-body{max-height:640px;opacity:1}
+.job ul{margin:1rem 0 0;padding:0;list-style:none;display:grid;gap:.65rem}
+.job li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.9rem;font-weight:300}
+.job li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.75}
+.job li b{color:var(--fg);font-weight:600}
+.chev{width:15px;height:15px;transition:transform .35s var(--ease);color:var(--dim);flex:none}
+.job.open .chev{transform:rotate(180deg);color:var(--accent)}
+
+/* ---------- case studies ---------- */
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:1.1rem}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r-md);padding:1.9rem 1.65rem;position:relative;overflow:hidden;transition:transform .35s var(--ease),border-color .3s var(--ease)}
+.card:hover{transform:translateY(-6px);border-color:var(--line2)}
+.card .glow{position:absolute;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(237,3,49,.16),transparent 70%);pointer-events:none;opacity:0;transition:opacity .3s ease;transform:translate(-50%,-50%)}
+.card:hover .glow{opacity:1}
+.card-n{font-family:Outfit;font-weight:800;font-size:.7rem;color:var(--accent);letter-spacing:.14em}
+.card h3{font-size:1.16rem;margin-top:.85rem}
+.card p{color:var(--muted);font-size:.855rem;margin-top:.8rem;font-weight:300}
+.chips{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:1.25rem}
+.chip{font-size:.66rem;padding:.28rem .68rem;border:1px solid var(--line2);border-radius:var(--r-full);color:var(--muted);letter-spacing:.04em}
+.card-out{margin-top:1.25rem;padding-top:1.1rem;border-top:1px solid var(--line);font-family:Outfit;font-weight:700;font-size:.87rem}
+.card-out span{color:var(--accent)}
+
+/* ---------- skills ---------- */
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:1.1rem}
+.sk{border:1px solid var(--line);border-radius:var(--r-md);padding:1.6rem 1.45rem;background:var(--surface);transition:border-color .3s var(--ease),background .3s var(--ease)}
+.sk:hover{border-color:var(--accent);background:var(--surface2)}
+.sk-i{width:36px;height:36px;border-radius:var(--r-sm);background:var(--accent-soft);border:1px solid rgba(237,3,49,.28);display:grid;place-items:center;color:var(--accent);margin-bottom:1rem}
+.sk-i svg{width:17px;height:17px}
+.sk h4{font-size:.98rem}
+.sk ul{list-style:none;margin:.85rem 0 0;padding:0;display:grid;gap:.42rem}
+.sk li{font-size:.815rem;color:var(--muted);font-weight:300;display:flex;gap:.5rem;align-items:baseline}
+.sk li::before{content:"—";color:var(--accent);opacity:.6;font-size:.7rem}
+
+/* ---------- tools ---------- */
+.tools{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:2.4rem}
+.tool{border:1px solid var(--line2);border-radius:var(--r-full);padding:.5rem 1.05rem;font-size:.795rem;font-family:Outfit;font-weight:500;color:var(--muted);transition:color .22s ease,border-color .22s ease,transform .26s var(--ease)}
+.tool:hover{color:var(--fg);border-color:var(--accent);transform:translateY(-2px)}
+
+/* ---------- education ---------- */
+.edu{display:grid;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r-md);overflow:hidden}
+.edu-r{background:var(--surface);padding:1.35rem 1.5rem;display:flex;justify-content:space-between;gap:1.2rem;flex-wrap:wrap;align-items:center;transition:background .3s var(--ease)}
+.edu-r:hover{background:var(--surface2)}
+.edu-r b{font-family:Outfit;font-size:.98rem}
+.edu-r span{color:var(--dim);font-size:.8rem;font-weight:300}
+.edu-r .yr{font-size:.72rem;letter-spacing:.09em;color:var(--dim);white-space:nowrap}
+
+/* ---------- CTA ---------- */
+.cta{border:1px solid var(--line2);border-radius:var(--r-lg);padding:clamp(2.6rem,6vw,4.5rem);text-align:center;background:radial-gradient(ellipse at 50% 0%,rgba(237,3,49,.16),transparent 62%),var(--surface);position:relative;overflow:hidden}
+.cta h2{max-width:20ch;margin-inline:auto}
+.cta p{color:var(--muted);max-width:52ch;margin:1.1rem auto 0;font-weight:300}
+.cta .btns{justify-content:center}
+.contact{display:flex;gap:1.75rem;justify-content:center;flex-wrap:wrap;margin-top:2.4rem;font-size:.83rem;color:var(--muted)}
+.contact a{display:flex;align-items:center;gap:.5rem;transition:color .22s ease}
+.contact a:hover{color:var(--accent)}
+.contact svg{width:15px;height:15px;color:var(--accent)}
+
+footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color:var(--dim)}
+.foot{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center}
+.foot a:hover{color:var(--fg)}
+
+/* ---------- reveal ---------- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .75s var(--ease),transform .75s var(--ease)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){
+  .rv{opacity:1;transform:none;transition:none}
+  .mq-t,.portrait::after,.hero::before,.brand i{animation:none!important}
+}
+
+/* ---------- print (Download CV) ---------- */
+@media print{
+  nav,#prog,.mq,.btns,.cta .btns,.burger,.portrait::after,.grid-bg,.hero::before{display:none!important}
+  body{background:#fff;color:#111;font-size:11pt}
+  .sec{padding:1rem 0;break-inside:avoid}
+  h1{font-size:26pt}h2{font-size:15pt}
+  .metric,.card,.sk,.edu-r,.flow{background:#fff!important;border-color:#ddd!important;color:#111}
+  .job-body{max-height:none!important;opacity:1!important}
+  .metric .d,.lead,.hero-sub,.job li,.card p,.sk li{color:#444!important}
+  .acc,.eyebrow,.job-co,.card-n{color:#c00!important}
+}
+</style>
+</head>
+<body>
+<div id="prog"></div>
+
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand"><i></i>Abhishesh Kumar</a>
+    <div class="nav-links" id="links">
+      <a href="#impact">Impact</a>
+      <a href="#model">Operating model</a>
+      <a href="#experience">Experience</a>
+      <a href="#work">Case studies</a>
+      <a href="#skills">Capabilities</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="top">
+  <div class="grid-bg"></div>
+  <div class="wrap hero-in">
+    <div>
+      <div class="pill rv">Operations &amp; Strategy <b>·</b> Bangalore <b>·</b> 6+ Years</div>
+      <h1 class="rv">Operations that<br>scale <span class="acc">without</span><br><span class="acc">breaking.</span></h1>
+      <p class="hero-sub rv">Senior Operations Manager building the machinery behind high-growth organisations — <strong>placement operations for 2,200+ learners</strong>, program governance, and AI-driven automation that turns manual workflows into measurable systems.</p>
+      <div class="btns rv">
+        <a href="#contact" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="m4 7 8 6 8-6"/></svg>Hire me</a>
+        <a href="#" class="btn btn-g" id="cv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download CV</a>
+      </div>
+    </div>
+    <div class="portrait rv">
+      <div class="portrait-in">
+        <img src="https://avatars.githubusercontent.com/u/121301531?s=460&v=4" alt="Abhishesh Kumar" referrerpolicy="no-referrer" onerror="this.style.display='none'">
+      </div>
+      <div class="badge b1"><i></i>Open to opportunities</div>
+      <div class="badge b2">Masai School</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="strip rv">
+      <div><div class="n" data-c="2200" data-suf="+">0</div><div class="l">Learners in scope</div></div>
+      <div><div class="n" data-c="1000" data-suf="+">0</div><div class="l">Placements enabled</div></div>
+      <div><div class="n" data-pre="₹" data-c="2.5" data-suf=" Cr+">0</div><div class="l">Monthly revenue ops</div></div>
+      <div><div class="n" data-c="180" data-suf="+">0</div><div class="l">Largest team managed</div></div>
+    </div>
+  </div>
+</header>
+
+<div class="mq">
+  <div class="mq-t" id="mq"></div>
+</div>
+
+<!-- IMPACT -->
+<section class="sec" id="impact">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Impact</div>
+        <h2>Numbers I'm<br>accountable for.</h2>
+      </div>
+      <p class="lead">Every figure below is something I owned end-to-end — not a team total I sat adjacent to.</p>
+    </div>
+    <div class="metrics rv">
+      <div class="metric"><div class="n" data-c="2200" data-suf="+">0</div><div class="t">Learners</div><div class="d">Placement operations owned end-to-end across Software Development, Data, QA and emerging tech.</div></div>
+      <div class="metric"><div class="n" data-c="1000" data-suf="+">0</div><div class="t">Placements enabled</div><div class="d">Through strategic employer engagement, hiring drives and operational excellence.</div></div>
+      <div class="metric"><div class="n" data-c="95" data-suf="%+">0</div><div class="t">Learner progression</div><div class="d">Lifted with Product, Academics, Business and Outcomes while cutting dropout below 5%.</div></div>
+      <div class="metric"><div class="n" data-pre="₹" data-c="2.5" data-suf=" Cr+">0</div><div class="t">Monthly revenue</div><div class="d">Pan-India operations supported across 10+ large-scale projects at Awign.</div></div>
+      <div class="metric"><div class="n" data-c="180" data-suf="+">0</div><div class="t">Field workforce</div><div class="d">Urban Ambassador team managed and mentored to consistent productivity and SLA targets.</div></div>
+      <div class="metric"><div class="n" data-c="2600" data-suf="+">0</div><div class="t">Students in learning ops</div><div class="d">Managed with a team of 10+ operations professionals across programs.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- OPERATING MODEL -->
+<section class="sec" id="model" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Operating model</div>
+        <h2>The engine I run —<br>and the two layers<br>that keep it <span class="acc">honest</span>.</h2>
+      </div>
+      <p class="lead">A placement function is a pipeline with a hundred failure points. Automation makes it fast; governance makes it trustworthy. Both, or neither works.</p>
+    </div>
+    <div class="flow rv">
+      <div class="flow-row">
+        <div class="node"><div class="k">Eligibility</div><div class="s">Activation</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="k">Readiness</div><div class="s">Career coaching</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="k">Employers</div><div class="s">Partnerships</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="k">Drives</div><div class="s">Interviews</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="k">Placement</div><div class="s">Offer</div></div>
+        <div class="arrow">→</div>
+        <div class="node"><div class="k">Alumni</div><div class="s">Success</div></div>
+      </div>
+      <div class="layers">
+        <div class="layer"><b>Automation layer</b><span>Apps Script · AI enablement · standardised SOPs · workflow digitisation</span></div>
+        <div class="layer"><b>Governance layer</b><span>Executive dashboards · SLAs · escalation paths · RCA · grievance resolution</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="sec" id="experience">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Experience</div>
+        <h2>Six years,<br>three promotions.</h2>
+      </div>
+      <p class="lead">L3 to L1 at Masai; Associate to Senior Analyst at Awign. Click any role to expand.</p>
+    </div>
+    <div class="tl">
+
+      <article class="job open rv">
+        <div class="job-h">
+          <div>
+            <h3>Manager L1 — Operations &amp; Placements</h3>
+            <div class="job-co">Masai School</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Jul 2025 — Present</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Own <b>end-to-end placement operations for 2,200+ learners</b> across Software Development, Data, QA and emerging technology programs — enabling <b>1,000+ placements</b>.</li>
+          <li>Own the operational strategy for the Placement vertical: employer partnerships, company onboarding, virtual and offline hiring drives, placement events, and the full learner lifecycle from eligibility to placement.</li>
+          <li>Lead cross-functional teams across Placement, Career Coaching, Business Development, Alumni Success and Employer Operations — redesigning job recommendations, resume clearance, interview scheduling, learner activation and governance.</li>
+          <li>Drive operational governance through policy implementation, executive reporting, high-priority escalations, learner grievance resolution and stakeholder management.</li>
+        </ul></div>
+      </article>
+
+      <article class="job rv">
+        <div class="job-h">
+          <div>
+            <h3>Program Operations Manager — L2</h3>
+            <div class="job-co">Masai School</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Apr 2024 — Jun 2025</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Led <b>Central Operations</b> for academic programs with a <b>team of 6</b> across Evaluations, MUI, Plagiarism Governance, Construct Week, Instructor Ratings, External Payouts and learner progression.</li>
+          <li>Built executive dashboards, standardised SOPs and shipped automation using <b>Looker Studio, Metabase, Google Sheets and Apps Script</b>.</li>
+          <li>Partnered with Product, Academics, Business and Outcomes to lift learner progression to <b>95%+</b> while reducing course dropout to <b>under 5%</b>.</li>
+          <li>Managed end-to-end evaluation operations, governance, instructor performance and learner analytics.</li>
+        </ul></div>
+      </article>
+
+      <article class="job rv">
+        <div class="job-h">
+          <div>
+            <h3>Program Operations Manager — L3</h3>
+            <div class="job-co">Masai School</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Dec 2022 — Mar 2024</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Re-engineered core operational processes for execution consistency, scalability and governance across programs.</li>
+          <li>Led learning operations for <b>2,600+ students</b>, managing and mentoring a <b>team of 10+</b> operations professionals.</li>
+          <li>Delivered career-readiness and interview-preparation initiatives that materially improved learner confidence, employability and placement readiness.</li>
+          <li>Built leadership dashboards in Google Data Studio and Metabase tracking cohort health, learner progress and risk indicators.</li>
+          <li>Ran structured FGDs with underperforming cohorts to identify root causes and deploy data-backed corrective plans.</li>
+        </ul></div>
+      </article>
+
+      <article class="job rv">
+        <div class="job-h">
+          <div>
+            <h3>Sr. Analyst — Operations</h3>
+            <div class="job-co">Awign</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Jan 2022 — Sep 2022</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Supported <b>10+ large-scale Pan-India operations</b> contributing <b>₹2.5 Cr+ in monthly revenue</b> through operational excellence and process optimisation.</li>
+          <li>Strengthened <b>fraud detection and revenue-leakage controls</b> while streamlining workflows into automation-ready, standardised frameworks.</li>
+          <li>Built automated dashboards and MIS reporting in Google Data Studio and Metabase, transforming operational data into actionable insight.</li>
+        </ul></div>
+      </article>
+
+      <article class="job rv">
+        <div class="job-h">
+          <div>
+            <h3>Sr. Associate — Operations</h3>
+            <div class="job-co">Awign</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Oct 2021 — Dec 2021</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Led expansion initiatives for <b>5+ enterprise clients</b>, driving market penetration, operational scale and revenue growth across regions.</li>
+          <li>Managed and mentored a <b>180+ member Urban Ambassador workforce</b>, consistently achieving productivity, conversion and SLA targets.</li>
+          <li>Implemented RCA-driven process improvements with Product, Client Success and Operations to enhance efficiency and customer satisfaction.</li>
+        </ul></div>
+      </article>
+
+      <article class="job rv">
+        <div class="job-h">
+          <div>
+            <h3>Associate — Operations</h3>
+            <div class="job-co">Awign</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:.8rem">
+            <div class="job-dt">Dec 2020 — Sep 2021</div>
+            <svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="m6 9 6 6 6-6"/></svg>
+          </div>
+        </div>
+        <div class="job-body"><ul>
+          <li>Executed expansion strategies across <b>12+ projects</b>, collaborating with Product and Tech to build scalable operational workflows.</li>
+          <li>Leveraged market research, geo-specific data and analytics to improve capacity planning, operational visibility and decision-making.</li>
+        </ul></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CASE STUDIES -->
+<section class="sec" id="work" style="background:var(--bg2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Selected work</div>
+        <h2>Three problems,<br>three systems.</h2>
+      </div>
+      <p class="lead">How I approach a broken process: diagnose the real failure mode, standardise it, then automate and instrument what's left.</p>
+    </div>
+    <div class="cards">
+
+      <article class="card rv"><div class="glow"></div>
+        <div class="card-n">01 / PLACEMENT ENGINE</div>
+        <h3>Rebuilding placement operations for 2,200+ learners</h3>
+        <p>Job recommendations, resume clearance, interview scheduling and learner activation were separate manual workflows owned by separate teams. I redesigned them into one governed pipeline with clear ownership at every stage, then layered employer partnerships and hiring drives on top.</p>
+        <div class="chips"><span class="chip">Placement ops</span><span class="chip">Employer engagement</span><span class="chip">Governance</span><span class="chip">Cross-functional</span></div>
+        <div class="card-out">Outcome — <span>1,000+ placements enabled</span></div>
+      </article>
+
+      <article class="card rv"><div class="glow"></div>
+        <div class="card-n">02 / CENTRAL OPS</div>
+        <h3>Automating academic operations with a team of six</h3>
+        <p>Evaluations, plagiarism governance, instructor ratings and external payouts ran on ad-hoc sheets. I standardised SOPs first, then built executive dashboards in Looker Studio and Metabase and automated the repetitive layer with Google Apps Script.</p>
+        <div class="chips"><span class="chip">Apps Script</span><span class="chip">Looker Studio</span><span class="chip">Metabase</span><span class="chip">SOP design</span></div>
+        <div class="card-out">Outcome — <span>95%+ progression, dropout under 5%</span></div>
+      </article>
+
+      <article class="card rv"><div class="glow"></div>
+        <div class="card-n">03 / REVENUE OPS</div>
+        <h3>Hardening Pan-India operations against leakage</h3>
+        <p>Across 10+ large-scale projects supporting ₹2.5 Cr+ in monthly revenue, reconciliation was reactive and fraud surfaced late. I introduced detection and revenue-leakage controls, standardised the workflows into automation-ready frameworks, and moved reporting into live MIS dashboards.</p>
+        <div class="chips"><span class="chip">Fraud detection</span><span class="chip">Revenue assurance</span><span class="chip">MIS</span><span class="chip">Process design</span></div>
+        <div class="card-out">Outcome — <span>Leakage controlled, reporting productised</span></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="sec" id="skills">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Capabilities</div>
+        <h2>What I bring<br>to the table.</h2>
+      </div>
+      <p class="lead">Operations strategy backed by analytics, and enough hands-on automation to ship the fix myself.</p>
+    </div>
+    <div class="skills">
+      <div class="sk rv">
+        <div class="sk-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M19 5l-3 3M8 16l-3 3"/></svg></div>
+        <h4>Business Operations</h4>
+        <ul><li>Operations strategy</li><li>Placement operations</li><li>Program management</li><li>Process excellence (DMAIC)</li></ul>
+      </div>
+      <div class="sk rv">
+        <div class="sk-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+        <h4>Leadership</h4>
+        <ul><li>Cross-functional leadership</li><li>Stakeholder management</li><li>Team leadership &amp; mentoring</li><li>Operational governance</li></ul>
+      </div>
+      <div class="sk rv">
+        <div class="sk-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="m7 15 4-5 3 3 5-7"/></svg></div>
+        <h4>Analytics</h4>
+        <ul><li>Data analytics</li><li>MIS &amp; reporting</li><li>Business intelligence</li><li>Root cause analysis</li></ul>
+      </div>
+      <div class="sk rv">
+        <div class="sk-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/><path d="M10 6.5h4a2 2 0 0 1 2 2V14M6.5 10v4a2 2 0 0 0 2 2H14"/></svg></div>
+        <h4>Automation &amp; AI</h4>
+        <ul><li>Workflow automation</li><li>AI enablement</li><li>Process digitisation</li><li>Revenue optimisation</li></ul>
+      </div>
+    </div>
+    <div class="tools rv">
+      <span class="tool">Looker Studio</span><span class="tool">Metabase</span><span class="tool">Google Apps Script</span><span class="tool">Google Sheets (Advanced)</span><span class="tool">MySQL</span><span class="tool">ChatGPT</span><span class="tool">Claude</span><span class="tool">Cursor</span>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="sec" id="education" style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div><div class="eyebrow">Education</div><h2>Foundations.</h2></div>
+    </div>
+    <div class="edu rv">
+      <div class="edu-r"><div><b>Master of Science (M.Sc.)</b><br><span>CSJMU</span></div><div class="yr">2020 — 2022</div></div>
+      <div class="edu-r"><div><b>Bachelor of Science (B.Sc.)</b><br><span>University of Allahabad, Prayagraj</span></div><div class="yr">2017 — 2020</div></div>
+      <div class="edu-r"><div><b>Secondary &amp; Senior Secondary (XII)</b><br><span>Army Public School, Bathinda Cantt</span></div><div class="yr">2015 — 2017</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec" id="contact">
+  <div class="wrap">
+    <div class="cta rv">
+      <div class="eyebrow" style="justify-content:center">Let's talk</div>
+      <h2>Looking for someone to<br>own <span class="acc">operations</span> end-to-end?</h2>
+      <p>Open to Senior Operations Manager, Program Operations and Business Operations roles — full-time, Bangalore or remote. Happy to walk through any of the systems above.</p>
+      <div class="btns">
+        <a href="mailto:abhisheshuu@gmail.com?subject=Opportunity%20for%20Abhishesh" class="btn btn-p">Email me</a>
+        <a href="https://linkedin.com/in/abhishesh-kumar" target="_blank" rel="noopener" class="btn btn-g">LinkedIn</a>
+      </div>
+      <div class="contact">
+        <a href="mailto:abhisheshuu@gmail.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>abhisheshuu@gmail.com</a>
+        <a href="tel:+917983907047"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.4 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.5c.9.4 1.8.6 2.8.8a2 2 0 0 1 1.7 2Z"/></svg>+91 79839 07047</a>
+        <a href="https://github.com/Sant1513" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.5 5 18.5 5.3 18.5 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>github.com/Sant1513</a>
+        <a href="#" id="cv2"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>Download CV</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>© <span id="yr"></span> Abhishesh Kumar · Bangalore, India</div>
+    <div><a href="mailto:abhisheshuu@gmail.com">abhisheshuu@gmail.com</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var RM = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* marquee */
+  var items=['Operations Strategy','Placement Operations','Program Management','Process Excellence','Workflow Automation','Business Intelligence','Stakeholder Management','Root Cause Analysis','AI Enablement','Operational Governance','MIS & Reporting','Revenue Optimisation'];
+  var mq=document.getElementById('mq'), html=items.map(function(t){return '<span>'+t+'</span>'}).join('');
+  mq.innerHTML=html+html;
+
+  /* year */
+  document.getElementById('yr').textContent=new Date().getFullYear();
+
+  /* nav state + scroll progress + active link */
+  var nav=document.getElementById('nav'), prog=document.getElementById('prog');
+  var secs=[].slice.call(document.querySelectorAll('section[id], header[id]'));
+  var navA=[].slice.call(document.querySelectorAll('.nav-links a[href^="#"]'));
+  function onScroll(){
+    var y=window.scrollY;
+    nav.classList.toggle('on', y>20);
+    var h=document.documentElement.scrollHeight-window.innerHeight;
+    prog.style.width=(h>0?(y/h)*100:0)+'%';
+    var cur='';
+    secs.forEach(function(s){ if(s.offsetTop-140<=y) cur=s.id; });
+    navA.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')==='#'+cur); });
+  }
+  addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  /* mobile menu */
+  var b=document.getElementById('burger'), l=document.getElementById('links');
+  b.addEventListener('click',function(){ b.classList.toggle('x'); l.classList.toggle('open'); });
+  l.addEventListener('click',function(e){ if(e.target.tagName==='A'){ b.classList.remove('x'); l.classList.remove('open'); }});
+
+  /* reveal on scroll (staggered) */
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if(RM){ rv.forEach(function(e){e.classList.add('in')}); }
+  else{
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en,i){
+        if(en.isIntersecting){
+          var el=en.target;
+          setTimeout(function(){ el.classList.add('in'); }, Math.min(i,6)*70);
+          io.unobserve(el);
+        }
+      });
+    },{threshold:.12,rootMargin:'0px 0px -60px 0px'});
+    rv.forEach(function(e){ io.observe(e); });
+  }
+
+  /* count-up */
+  function countUp(el){
+    var target=parseFloat(el.dataset.c), dec=(el.dataset.c.indexOf('.')>-1)?1:0;
+    var pre=el.dataset.pre||'', suf=el.dataset.suf||'', t0=null, dur=1500;
+    if(RM){ el.textContent=pre+target.toFixed(dec).replace(/\B(?=(\d{3})+(?!\d))/g,',')+suf; return; }
+    function step(ts){
+      if(!t0) t0=ts;
+      var p=Math.min((ts-t0)/dur,1), e=1-Math.pow(1-p,3);
+      var v=(target*e).toFixed(dec);
+      el.textContent=pre+String(v).replace(/\B(?=(\d{3})+(?!\d))/g,',')+suf;
+      if(p<1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+  var nio=new IntersectionObserver(function(es){
+    es.forEach(function(en){ if(en.isIntersecting){ countUp(en.target); nio.unobserve(en.target); }});
+  },{threshold:.5});
+  [].slice.call(document.querySelectorAll('[data-c]')).forEach(function(e){ nio.observe(e); });
+
+  /* experience accordion */
+  [].slice.call(document.querySelectorAll('.job-h')).forEach(function(h){
+    h.addEventListener('click',function(){ h.parentElement.classList.toggle('open'); });
+  });
+
+  /* card cursor glow */
+  if(!RM && matchMedia('(hover:hover)').matches){
+    [].slice.call(document.querySelectorAll('.card')).forEach(function(c){
+      var g=c.querySelector('.glow');
+      c.addEventListener('mousemove',function(ev){
+        var r=c.getBoundingClientRect();
+        g.style.left=(ev.clientX-r.left)+'px';
+        g.style.top=(ev.clientY-r.top)+'px';
+      });
+    });
+  }
+
+  /* Download CV -> print-optimised view */
+  function printCV(e){
+    e.preventDefault();
+    document.querySelectorAll('.job').forEach(function(j){ j.classList.add('open'); });
+    document.querySelectorAll('[data-c]').forEach(function(el){
+      if(el.textContent==='0'||el.textContent==='') countUp(el);
+    });
+    setTimeout(function(){ window.print(); },260);
+  }
+  document.getElementById('cv').addEventListener('click',printCV);
+  document.getElementById('cv2').addEventListener('click',printCV);
+})();
+</script>
+</body>
+</html>
