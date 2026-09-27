@@ -158,7 +158,7 @@ h2{font-size:var(--h2)}
 .layer span{font-size:.735rem;color:var(--muted);font-weight:300}
 
 /* ---------- experience ---------- */
-.tl{position:relative;padding-left:2.1rem}
+.tl{position:relative;padding-left:2.1rem;overflow-anchor:none}
 .tl::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--accent),var(--line) 45%,transparent)}
 .job{position:relative;padding-bottom:2.6rem}
 .job::before{content:"";position:absolute;left:-2.1rem;top:.5rem;width:13px;height:13px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);transition:box-shadow .3s var(--ease)}
@@ -390,7 +390,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
         <div class="eyebrow">Experience</div>
         <h2>Six years,<br>three promotions.</h2>
       </div>
-      <p class="lead">L3 to L1 at Masai; Associate to Senior Analyst at Awign. Click any role to expand.</p>
+      <p class="lead">L3 to L1 at Masai; Associate to Senior Analyst at Awign. Scroll to walk through each role, or click one to open it.</p>
     </div>
     <div class="tl">
 
@@ -825,10 +825,60 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
   },{threshold:.5});
   [].slice.call(document.querySelectorAll('[data-c]')).forEach(function(e){ nio.observe(e); });
 
-  /* experience accordion */
-  [].slice.call(document.querySelectorAll('.job-h')).forEach(function(h){
-    h.addEventListener('click',function(){ h.parentElement.classList.toggle('open'); });
-  });
+  /* experience: the role at the reading line opens as you scroll; the others fold away.
+     Scrolling down opens the next one, scrolling up re-opens the previous one; a click still works. */
+  (function(){
+    var jobs=[].slice.call(document.querySelectorAll('.tl .job'));
+    if(!jobs.length) return;
+    var tl=document.querySelector('.tl');
+    var current=jobs.indexOf(document.querySelector('.tl .job.open'));
+    var lockedUntil=0, ticking=false;
+    var LOCK=RM?80:560;              /* let the open/close animation finish before re-measuring */
+    /* Keep the newly opened role where the reader is looking while the one above folds away:
+       each frame, scroll by however far its title moved in the document (the reader's own scrolling is kept). */
+    function hold(el,ms){
+      var until=Date.now()+ms, last=el.getBoundingClientRect().top+scrollY;
+      (function frame(){
+        var now=el.getBoundingClientRect().top+scrollY, shift=now-last;
+        if(Math.abs(shift)>.5) scrollBy({top:shift,behavior:'instant'}); /* the page uses smooth scrolling; corrections must be instant */
+        last=el.getBoundingClientRect().top+scrollY;
+        if(Date.now()<until) requestAnimationFrame(frame);
+      })();
+    }
+    function show(i,fromClick){
+      if(i===current||i<0) return;
+      current=i;
+      jobs.forEach(function(j,k){ j.classList.toggle('open',k===i); });
+      if(!fromClick) hold(jobs[i].querySelector('.job-h'),LOCK+120);
+      lockedUntil=Date.now()+LOCK;
+    }
+    function pick(){
+      ticking=false;
+      if(Date.now()<lockedUntil){ schedule(); return; }
+      var r=tl.getBoundingClientRect(), vh=innerHeight;
+      if(r.bottom<0||r.top>vh) return;                 /* only while the timeline is on screen */
+      var line=vh*.42, best=0;
+      /* the last role whose title has passed the reading line (with a little hysteresis) */
+      for(var k=0;k<jobs.length;k++){
+        var top=jobs[k].querySelector('.job-h').getBoundingClientRect().top;
+        var pad=(k===current)?24:-24;
+        if(top<=line+pad) best=k;
+      }
+      /* one role at a time, so none is skipped when the one above folds away; a big leap (menu link) goes straight there */
+      if(current>=0&&Math.abs(best-current)<=2&&best!==current) best=current+(best>current?1:-1);
+      show(best);
+    }
+    function schedule(){ if(!ticking){ ticking=true; requestAnimationFrame(pick); } }
+    addEventListener('scroll',schedule,{passive:true});
+    addEventListener('resize',schedule);
+    jobs.forEach(function(j,k){
+      j.querySelector('.job-h').addEventListener('click',function(){
+        if(k===current&&j.classList.contains('open')){ j.classList.remove('open'); current=-1; }
+        else show(k,true);
+        lockedUntil=Date.now()+1200;                  /* respect the click for a moment */
+      });
+    });
+  })();
 
   /* card cursor glow */
   if(!RM && matchMedia('(hover:hover)').matches){
