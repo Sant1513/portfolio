@@ -198,19 +198,19 @@ h2{font-size:var(--h2)}
 .proj-bar i{width:8px;height:8px;border-radius:50%;background:var(--line2)}
 .proj-bar i:first-child{background:var(--accent);opacity:.8}
 .proj-bar span{margin-left:.55rem;font-size:.66rem;color:var(--dim);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
-.proj-shot{aspect-ratio:1280/760;overflow:hidden}
+.proj-shot{aspect-ratio:1280/360;overflow:hidden}
 .proj-shot img,.proj-shot svg{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;transition:transform .7s var(--ease)}
 .card.proj:hover .proj-shot img,.card.proj:hover .proj-shot svg{transform:scale(1.03)}
-.proj-body{position:relative;padding:1.8rem 1.65rem 1.7rem;display:flex;flex-direction:column;flex:1}
-.card.proj h3{font-size:1.5rem;margin-top:.85rem}
-.card .proj-line{font-family:Outfit;font-weight:600;font-size:.98rem;line-height:1.4;margin-top:.6rem;color:var(--fg)}
-.proj ul{margin:1.1rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
-.proj li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.84rem;font-weight:300;line-height:1.6}
+.proj-body{position:relative;padding:1.25rem 1.4rem 1.3rem;display:flex;flex-direction:column;flex:1}
+.card.proj h3{font-size:1.3rem;margin-top:.55rem}
+.card .proj-line{font-family:Outfit;font-weight:500;font-size:.9rem;line-height:1.45;margin-top:.4rem;color:var(--fg)}
+.proj ul{margin:.8rem 0 .9rem;padding:0;list-style:none;display:grid;gap:.35rem}
+.proj li{position:relative;padding-left:1.05rem;color:var(--muted);font-size:.8rem;font-weight:300;line-height:1.5}
 .proj li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.75}
 .proj li b{color:var(--fg);font-weight:600}
-.proj-links{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:auto;padding-top:1.4rem}
+.proj-links{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center;margin-top:auto;padding-top:.9rem}
 .proj .chips{margin-bottom:.2rem}
-.proj-links .btn{padding:.66rem 1.15rem;font-size:.8rem}
+.proj-links .btn{padding:.55rem 1rem;font-size:.76rem}
 .proj-note{font-size:.7rem;color:var(--dim);letter-spacing:.02em}
 .proj-priv{display:inline-flex;align-items:center;gap:.45rem;font-size:.75rem;color:var(--dim);font-family:Outfit;font-weight:500}
 .proj-priv svg{width:14px;height:14px}
@@ -529,16 +529,13 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
         <div class="proj-body">
           <div class="card-n">01 / DELIVERABILITY</div>
           <h3>Email Verifier</h3>
-          <p class="proj-line">Checks every address before a placement or admissions campaign goes out, so fewer emails bounce and the sender reputation stays protected.</p>
-          <p>Each address gets a status, a 0–100 confidence score, a SEND / REVIEW / SUPPRESS recommendation and the reasons behind it. No address is ever called "guaranteed deliverable".</p>
+          <p class="proj-line">Checks every address before a campaign goes out, with a 0–100 score, a Send / Review / Suppress call and the reasons behind it.</p>
           <ul>
-            <li><b>Explainable risk engine:</b> syntax, DNS/MX, provider, disposable and role-address checks, plus SMTP mailbox probing with catch-all detection, throttling and daily per-provider limits.</li>
-            <li><b>Learns from delivery history:</b> SendGrid and Mailgun webhooks feed bounces and complaints back in, and hard bounces are suppressed automatically.</li>
-            <li><b>Batch jobs</b> from CSV or Google Sheets on a Postgres queue, with campaign audience rules that produce a clean send list.</li>
-            <li><b>Dashboard</b> with date filters, trends, saved views, CSV export and scheduled Gmail reports; workspaces with role-based access and approval-first Google sign-in.</li>
-            <li><b>Installable mailbox helper</b> for Windows, macOS and Linux, because browsers and serverless hosts can't open port 25. Nearly 480 automated tests, all on free tiers.</li>
+            <li><b>Explainable engine:</b> DNS/MX, disposable and role checks, live SMTP mailbox probing and delivery history.</li>
+            <li><b>Batch jobs</b> from CSV or Google Sheets, campaign audience rules and auto-suppression of bounces.</li>
+            <li><b>Dashboards, reports and workspaces</b> with role-based access; ~480 automated tests, on free tiers.</li>
           </ul>
-          <div class="chips"><span class="chip">Next.js 16</span><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL (Neon)</span><span class="chip">Tailwind v4</span><span class="chip">Vitest</span><span class="chip">Vercel</span></div>
+          <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Vercel</span></div>
           <div class="proj-links">
             <a href="https://email-verifier-seven-mocha.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
             <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private repository</span>
@@ -551,7 +548,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
         <div class="proj-win">
           <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><span>MailFlow · Mail and Sign</span></div>
           <div class="proj-shot">
-            <svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of MailFlow: a Mail and Sign product switcher, an approved email campaign and a signed document">
+            <svg viewBox="0 0 1280 760" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of MailFlow: a Mail and Sign product switcher, an approved email campaign and a signed document">
               <defs>
                 <pattern id="mf-grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/></pattern>
                 <radialGradient id="mf-glow" cx="62%" cy="10%" r="70%"><stop offset="0" stop-color="#ed0331" stop-opacity=".22"/><stop offset=".5" stop-color="#ed0331" stop-opacity=".05"/><stop offset="1" stop-color="#ed0331" stop-opacity="0"/></radialGradient>
@@ -622,16 +619,13 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
         <div class="proj-body">
           <div class="card-n">02 / COMMUNICATION</div>
           <h3>MailFlow</h3>
-          <p class="proj-line">One internal platform for placement email and e-signatures: two products, Mail and Sign, behind a single Google sign-in.</p>
-          <p>Built for Masai School's placement team. Campaigns go out from each teammate's own Gmail after an admin approves them, replies land in a shared inbox, and placement documents are sent for signature one at a time or in bulk.</p>
+          <p class="proj-line">Placement email and e-signatures in one platform: Mail and Sign, behind a single Google sign-in.</p>
           <ul>
-            <li><b>Mail:</b> dataset-backed campaigns with approval before sending, open, click and reply analytics, suppression lists and automatic suppression of hard bounces.</li>
-            <li><b>Shared inbox</b> synced with Gmail: threading, assignment, tags, SLA rules with overdue flags, and first and average response times per teammate.</li>
-            <li><b>Sign:</b> documents for e-signature individually or in bulk from a CSV, with multiple signers, drag-and-drop signature placement, reminders and an audit trail.</li>
-            <li><b>Signed PDFs</b> printed with headless Chromium from the same HTML the signer sees, with a completion certificate added.</li>
-            <li><b>Optional Gemini AI</b> drafts templates and suggests replies within daily limits; a person always presses Send. Plus trigger-based automations, signed webhooks and role-based access.</li>
+            <li><b>Mail:</b> approved campaigns sent from each teammate's Gmail, with open, click and reply analytics.</li>
+            <li><b>Shared inbox</b> synced with Gmail: assignment, tags, SLA rules and response times.</li>
+            <li><b>Sign:</b> bulk e-signature with drag-and-drop fields, reminders, audit trail and signed PDFs.</li>
           </ul>
-          <div class="chips"><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Gmail API</span><span class="chip">Gemini API</span><span class="chip">pdf-lib</span><span class="chip">Vercel</span></div>
+          <div class="chips"><span class="chip">Next.js</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">Gmail API</span><span class="chip">Gemini API</span></div>
           <div class="proj-links">
             <a href="https://mailflow-six-sooty.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
             <a href="https://github.com/Sant1513/mailflow" target="_blank" rel="noopener" class="btn btn-g"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.5 5 18.5 5.3 18.5 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>Source code</a>
