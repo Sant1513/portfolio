@@ -56,6 +56,8 @@ nav.on{border-bottom-color:var(--line);background:rgba(8,8,10,.85)}
 .nav-cta::after{display:none!important}
 .nav-links a.nav-cta:hover,.nav-links a.nav-cta.active{color:#fff}
 .nav-cta:hover{background:#ff1744;transform:translateY(-2px)}
+.brand,.nav-links a{white-space:nowrap}
+@media(min-width:861px) and (max-width:1100px){.nav-links{gap:1rem;font-size:.8rem}}
 .burger{display:none;width:38px;height:38px;border:1px solid var(--line);border-radius:var(--r-sm);background:none;cursor:pointer;position:relative}
 .burger span{position:absolute;left:10px;width:18px;height:1.6px;background:var(--fg);transition:transform .3s var(--ease),opacity .2s}
 .burger span:nth-child(1){top:13px}.burger span:nth-child(2){top:18.5px}.burger span:nth-child(3){top:24px}
@@ -188,6 +190,31 @@ h2{font-size:var(--h2)}
 .card-out{margin-top:1.25rem;padding-top:1.1rem;border-top:1px solid var(--line);font-family:Outfit;font-weight:700;font-size:.87rem}
 .card-out span{color:var(--accent)}
 
+/* ---------- built products ---------- */
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:1.1rem}
+.card.proj{padding:0;display:flex;flex-direction:column}
+.proj-win{position:relative;border-bottom:1px solid var(--line);background:var(--bg)}
+.proj-bar{display:flex;align-items:center;gap:.4rem;height:34px;padding:0 .9rem;border-bottom:1px solid var(--line);background:var(--surface2)}
+.proj-bar i{width:8px;height:8px;border-radius:50%;background:var(--line2)}
+.proj-bar i:first-child{background:var(--accent);opacity:.8}
+.proj-bar span{margin-left:.55rem;font-size:.66rem;color:var(--dim);letter-spacing:.03em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.proj-shot{aspect-ratio:1280/760;overflow:hidden}
+.proj-shot img,.proj-shot svg{width:100%;height:100%;object-fit:cover;object-position:top left;display:block;transition:transform .7s var(--ease)}
+.card.proj:hover .proj-shot img,.card.proj:hover .proj-shot svg{transform:scale(1.03)}
+.proj-body{position:relative;padding:1.8rem 1.65rem 1.7rem;display:flex;flex-direction:column;flex:1}
+.card.proj h3{font-size:1.5rem;margin-top:.85rem}
+.card .proj-line{font-family:Outfit;font-weight:600;font-size:.98rem;line-height:1.4;margin-top:.6rem;color:var(--fg)}
+.proj ul{margin:1.1rem 0 0;padding:0;list-style:none;display:grid;gap:.55rem}
+.proj li{position:relative;padding-left:1.15rem;color:var(--muted);font-size:.84rem;font-weight:300;line-height:1.6}
+.proj li::before{content:"";position:absolute;left:0;top:.62em;width:5px;height:5px;border-radius:50%;background:var(--accent);opacity:.75}
+.proj li b{color:var(--fg);font-weight:600}
+.proj-links{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin-top:auto;padding-top:1.4rem}
+.proj .chips{margin-bottom:.2rem}
+.proj-links .btn{padding:.66rem 1.15rem;font-size:.8rem}
+.proj-note{font-size:.7rem;color:var(--dim);letter-spacing:.02em}
+.proj-priv{display:inline-flex;align-items:center;gap:.45rem;font-size:.75rem;color:var(--dim);font-family:Outfit;font-weight:500}
+.proj-priv svg{width:14px;height:14px}
+
 /* ---------- skills ---------- */
 .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(235px,1fr));gap:1.1rem}
 .sk{border:1px solid var(--line);border-radius:var(--r-md);padding:1.6rem 1.45rem;background:var(--surface);transition:border-color .3s var(--ease),background .3s var(--ease)}
@@ -240,6 +267,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
   body{background:#fff;color:#111;font-size:11pt}
   .sec{padding:1rem 0;break-inside:avoid}
   h1{font-size:26pt}h2{font-size:15pt}
+  .proj-win,.proj-links .btn{display:none!important}
   .metric,.card,.sk,.edu-r,.flow{background:#fff!important;border-color:#ddd!important;color:#111}
   .job-body{max-height:none!important;opacity:1!important}
   .metric .d,.lead,.hero-sub,.job li,.card p,.sk li{color:#444!important}
@@ -257,6 +285,7 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
       <a href="#impact">Impact</a>
       <a href="#model">Operating model</a>
       <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
       <a href="#work">Case studies</a>
       <a href="#skills">Capabilities</a>
       <a href="#contact" class="nav-cta">Get in touch</a>
@@ -474,6 +503,141 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
           <li>Executed expansion strategies across <b>12+ projects</b>, collaborating with Product and Tech to build scalable operational workflows.</li>
           <li>Leveraged market research, geo-specific data and analytics to improve capacity planning, operational visibility and decision-making.</li>
         </ul></div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects" style="background:var(--bg2);border-top:1px solid var(--line)">
+  <div class="wrap">
+    <div class="head-row rv">
+      <div>
+        <div class="eyebrow">Products I've built</div>
+        <h2>Two tools,<br>built and <span class="acc">shipped</span>.</h2>
+      </div>
+      <p class="lead">When the process needed software, I built it: full-stack web apps designed, written and deployed for placement and admissions communication.</p>
+    </div>
+    <div class="projects">
+
+      <article class="card proj rv"><div class="glow"></div>
+        <div class="proj-win">
+          <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><span>Email Verifier · single-address result</span></div>
+          <div class="proj-shot"><img src="assets/projects/email-verifier.webp" width="1024" height="608" loading="lazy" decoding="async" alt="Email Verifier result page: an address rated Safe to send with a SEND recommendation, confidence 100, and the verification signals behind it"></div>
+        </div>
+        <div class="proj-body">
+          <div class="card-n">01 / DELIVERABILITY</div>
+          <h3>Email Verifier</h3>
+          <p class="proj-line">Checks every address before a placement or admissions campaign goes out, so fewer emails bounce and the sender reputation stays protected.</p>
+          <p>Each address gets a status, a 0–100 confidence score, a SEND / REVIEW / SUPPRESS recommendation and the reasons behind it. No address is ever called "guaranteed deliverable".</p>
+          <ul>
+            <li><b>Explainable risk engine:</b> syntax, DNS/MX, provider, disposable and role-address checks, plus SMTP mailbox probing with catch-all detection, throttling and daily per-provider limits.</li>
+            <li><b>Learns from delivery history:</b> SendGrid and Mailgun webhooks feed bounces and complaints back in, and hard bounces are suppressed automatically.</li>
+            <li><b>Batch jobs</b> from CSV or Google Sheets on a Postgres queue, with campaign audience rules that produce a clean send list.</li>
+            <li><b>Dashboard</b> with date filters, trends, saved views, CSV export and scheduled Gmail reports; workspaces with role-based access and approval-first Google sign-in.</li>
+            <li><b>Installable mailbox helper</b> for Windows, macOS and Linux, because browsers and serverless hosts can't open port 25. Nearly 480 automated tests, all on free tiers.</li>
+          </ul>
+          <div class="chips"><span class="chip">Next.js 16</span><span class="chip">React 19</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL (Neon)</span><span class="chip">Tailwind v4</span><span class="chip">Vitest</span><span class="chip">Vercel</span></div>
+          <div class="proj-links">
+            <a href="https://email-verifier-seven-mocha.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
+            <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private repository</span>
+            <span class="proj-note">Sign-in required</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card proj rv"><div class="glow"></div>
+        <div class="proj-win">
+          <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><span>MailFlow · Mail and Sign</span></div>
+          <div class="proj-shot">
+            <svg viewBox="0 0 1280 760" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of MailFlow: a Mail and Sign product switcher, an approved email campaign and a signed document">
+              <defs>
+                <pattern id="mf-grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/></pattern>
+                <radialGradient id="mf-glow" cx="62%" cy="10%" r="70%"><stop offset="0" stop-color="#ed0331" stop-opacity=".22"/><stop offset=".5" stop-color="#ed0331" stop-opacity=".05"/><stop offset="1" stop-color="#ed0331" stop-opacity="0"/></radialGradient>
+              </defs>
+              <rect width="1280" height="760" fill="#0c0c0f"/>
+              <rect width="1280" height="760" fill="url(#mf-grid)"/>
+              <rect width="1280" height="760" fill="url(#mf-glow)"/>
+              <rect x="0" y="0" width="270" height="760" fill="#111114"/>
+              <path d="M270 0V760" stroke="rgba(255,255,255,.08)"/>
+              <rect x="36" y="40" width="44" height="44" rx="11" fill="#ed0331"/>
+              <path d="M47 53h22v18H47z M47 55l11 8 11-8" fill="none" stroke="#fff" stroke-width="2.6" stroke-linejoin="round"/>
+              <text x="94" y="72" font-family="Outfit,Poppins,sans-serif" font-weight="800" font-size="30" letter-spacing="-.5" fill="#fafafa">MailFlow</text>
+              <rect x="36" y="118" width="198" height="46" rx="23" fill="none" stroke="rgba(255,255,255,.14)"/>
+              <rect x="40" y="122" width="96" height="38" rx="19" fill="#ed0331"/>
+              <text x="88" y="147" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="17" fill="#fff">Mail</text>
+              <text x="185" y="147" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="17" fill="#a1a1aa">Sign</text>
+              <g fill="rgba(255,255,255,.08)">
+                <rect x="36" y="206" width="198" height="40" rx="8" fill="rgba(237,3,49,.12)"/>
+                <rect x="56" y="222" width="100" height="9" rx="4.5" fill="#fafafa" opacity=".85"/>
+                <rect x="56" y="276" width="120" height="9" rx="4.5"/>
+                <rect x="56" y="320" width="84" height="9" rx="4.5"/>
+                <rect x="56" y="364" width="132" height="9" rx="4.5"/>
+                <rect x="56" y="408" width="96" height="9" rx="4.5"/>
+                <rect x="56" y="452" width="110" height="9" rx="4.5"/>
+              </g>
+              <rect x="316" y="60" width="440" height="640" rx="18" fill="#111114" stroke="rgba(255,255,255,.1)"/>
+              <rect x="348" y="96" width="52" height="52" rx="12" fill="rgba(237,3,49,.12)" stroke="rgba(237,3,49,.35)"/>
+              <path d="M362 112h24v20h-24z M362 114l12 9 12-9" fill="none" stroke="#ed0331" stroke-width="2.6" stroke-linejoin="round"/>
+              <text x="416" y="118" font-family="Outfit,Poppins,sans-serif" font-weight="700" font-size="22" fill="#fafafa">Placement campaign</text>
+              <text x="416" y="143" font-family="Poppins,sans-serif" font-size="15" fill="#71717a">Personalised from a dataset</text>
+              <rect x="348" y="176" width="136" height="32" rx="16" fill="rgba(34,197,94,.12)" stroke="rgba(34,197,94,.45)"/>
+              <circle cx="366" cy="192" r="4.5" fill="#22c55e"/>
+              <text x="380" y="198" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="15" fill="#86efac">Approved</text>
+              <path d="M348 236H724" stroke="rgba(255,255,255,.08)"/>
+              <g font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="14" fill="#a1a1aa" letter-spacing="1.5">
+                <text x="348" y="276">SENT</text><text x="348" y="346">OPENED</text><text x="348" y="416">REPLIED</text>
+              </g>
+              <rect x="348" y="290" width="376" height="10" rx="5" fill="rgba(255,255,255,.07)"/><rect x="348" y="290" width="340" height="10" rx="5" fill="#ed0331"/>
+              <rect x="348" y="360" width="376" height="10" rx="5" fill="rgba(255,255,255,.07)"/><rect x="348" y="360" width="226" height="10" rx="5" fill="#ed0331" opacity=".75"/>
+              <rect x="348" y="430" width="376" height="10" rx="5" fill="rgba(255,255,255,.07)"/><rect x="348" y="430" width="120" height="10" rx="5" fill="#ed0331" opacity=".5"/>
+              <path d="M348 472H724" stroke="rgba(255,255,255,.08)"/>
+              <g fill="rgba(255,255,255,.08)">
+                <circle cx="366" cy="510" r="14"/><rect x="392" y="498" width="170" height="9" rx="4.5" fill="rgba(255,255,255,.2)"/><rect x="392" y="514" width="250" height="8" rx="4"/>
+                <circle cx="366" cy="570" r="14"/><rect x="392" y="558" width="140" height="9" rx="4.5" fill="rgba(255,255,255,.2)"/><rect x="392" y="574" width="220" height="8" rx="4"/>
+                <circle cx="366" cy="630" r="14"/><rect x="392" y="618" width="190" height="9" rx="4.5" fill="rgba(255,255,255,.2)"/><rect x="392" y="634" width="200" height="8" rx="4"/>
+              </g>
+              <rect x="792" y="60" width="440" height="640" rx="18" fill="#111114" stroke="rgba(255,255,255,.1)"/>
+              <rect x="832" y="100" width="360" height="440" rx="10" fill="#fafafa"/>
+              <g fill="#d4d4d8">
+                <rect x="864" y="136" width="170" height="14" rx="4" fill="#27272a"/>
+                <rect x="864" y="176" width="296" height="8" rx="4"/><rect x="864" y="196" width="270" height="8" rx="4"/><rect x="864" y="216" width="288" height="8" rx="4"/><rect x="864" y="236" width="200" height="8" rx="4"/>
+                <rect x="864" y="272" width="296" height="8" rx="4"/><rect x="864" y="292" width="250" height="8" rx="4"/><rect x="864" y="312" width="280" height="8" rx="4"/>
+              </g>
+              <rect x="864" y="372" width="200" height="110" rx="8" fill="rgba(237,3,49,.05)" stroke="#ed0331" stroke-width="2" stroke-dasharray="8 6"/>
+              <path d="M884 450c14-34 26-44 32-34 7 12-12 40-2 40 9 0 18-38 30-38 10 0 2 30 12 30 8 0 12-20 22-20 8 0 6 14 16 14 8 0 14-8 22-10" fill="none" stroke="#18181b" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="864" y="496" width="140" height="7" rx="3.5" fill="#a1a1aa"/>
+              <g font-family="Outfit,Poppins,sans-serif" font-size="16" font-weight="600">
+                <circle cx="846" cy="590" r="12" fill="rgba(34,197,94,.15)" stroke="#22c55e"/>
+                <path d="M840 590l4.5 4.5 8-9" fill="none" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <text x="870" y="596" fill="#fafafa">Signer 1</text><text x="1192" y="596" text-anchor="end" fill="#86efac">Signed</text>
+                <circle cx="846" cy="642" r="12" fill="rgba(237,3,49,.12)" stroke="#ed0331"/>
+                <circle cx="846" cy="642" r="4" fill="#ed0331"/>
+                <text x="870" y="648" fill="#fafafa">Signer 2</text><text x="1192" y="648" text-anchor="end" fill="#a1a1aa">Awaiting</text>
+              </g>
+            </svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="card-n">02 / COMMUNICATION</div>
+          <h3>MailFlow</h3>
+          <p class="proj-line">One internal platform for placement email and e-signatures: two products, Mail and Sign, behind a single Google sign-in.</p>
+          <p>Built for Masai School's placement team. Campaigns go out from each teammate's own Gmail after an admin approves them, replies land in a shared inbox, and placement documents are sent for signature one at a time or in bulk.</p>
+          <ul>
+            <li><b>Mail:</b> dataset-backed campaigns with approval before sending, open, click and reply analytics, suppression lists and automatic suppression of hard bounces.</li>
+            <li><b>Shared inbox</b> synced with Gmail: threading, assignment, tags, SLA rules with overdue flags, and first and average response times per teammate.</li>
+            <li><b>Sign:</b> documents for e-signature individually or in bulk from a CSV, with multiple signers, drag-and-drop signature placement, reminders and an audit trail.</li>
+            <li><b>Signed PDFs</b> printed with headless Chromium from the same HTML the signer sees, with a completion certificate added.</li>
+            <li><b>Optional Gemini AI</b> drafts templates and suggests replies within daily limits; a person always presses Send. Plus trigger-based automations, signed webhooks and role-based access.</li>
+          </ul>
+          <div class="chips"><span class="chip">Next.js 14</span><span class="chip">TypeScript</span><span class="chip">Prisma</span><span class="chip">PostgreSQL</span><span class="chip">Gmail API</span><span class="chip">Gemini API</span><span class="chip">pdf-lib</span><span class="chip">Vercel</span></div>
+          <div class="proj-links">
+            <a href="https://mailflow-six-sooty.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
+            <a href="https://github.com/Sant1513/mailflow" target="_blank" rel="noopener" class="btn btn-g"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.5 5 18.5 5.3 18.5 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>Source code</a>
+            <span class="proj-note">Sign-in required</span>
+          </div>
+        </div>
       </article>
 
     </div>
