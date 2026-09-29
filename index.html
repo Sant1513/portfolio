@@ -211,7 +211,7 @@ h2{font-size:var(--h2)}
 .card-out span{color:var(--accent)}
 
 /* ---------- built products ---------- */
-.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:1.1rem}
+.projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,330px),1fr));gap:1.1rem}
 .card.proj{padding:0;display:flex;flex-direction:column}
 .proj-win{position:relative;border-bottom:1px solid var(--line);background:var(--bg)}
 .proj-bar{display:flex;align-items:center;gap:.4rem;height:34px;padding:0 .9rem;border-bottom:1px solid var(--line);background:var(--surface2)}
@@ -535,9 +535,9 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
     <div class="head-row rv">
       <div>
         <div class="eyebrow">Products I've built</div>
-        <h2>Two tools,<br>built and <span class="acc">shipped</span>.</h2>
+        <h2>Three tools,<br>built and <span class="acc">shipped</span>.</h2>
       </div>
-      <p class="lead">When the process needed software, I built it: full-stack web apps designed, written and deployed for placement and admissions communication.</p>
+      <p class="lead">When the process needed software, I built it: full-stack apps and a Chrome extension, designed, written and deployed for placement, admissions and outreach.</p>
     </div>
     <div class="projects">
 
@@ -650,6 +650,76 @@ footer{border-top:1px solid var(--line);padding:2.2rem 0;font-size:.775rem;color
             <a href="https://mailflow-six-sooty.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
             <a href="https://github.com/Sant1513/mailflow" target="_blank" rel="noopener" class="btn btn-g"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.9 10.9c.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 1.8 2.7 1.3 3.4 1 .1-.7.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.5 5 18.5 5.3 18.5 5.3c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .4.2.7.8.6A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5Z"/></svg>Source code</a>
             <span class="proj-note">Sign-in required</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="card proj rv"><div class="glow"></div>
+        <div class="proj-win">
+          <div class="proj-bar" aria-hidden="true"><i></i><i></i><i></i><span>Prospect Intelligence · LinkedIn side panel</span></div>
+          <div class="proj-shot">
+            <svg viewBox="0 0 1280 760" preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of Prospect Intelligence: a LinkedIn profile with a hiring post beside a side panel showing a hiring-intent score of 82, evidence-backed signals, a verified work email and a Send to Instantly button">
+              <defs>
+                <pattern id="pi-grid" width="64" height="64" patternUnits="userSpaceOnUse"><path d="M64 0H0V64" fill="none" stroke="rgba(255,255,255,.05)" stroke-width="1"/></pattern>
+                <radialGradient id="pi-glow" cx="70%" cy="12%" r="70%"><stop offset="0" stop-color="#ed0331" stop-opacity=".22"/><stop offset=".5" stop-color="#ed0331" stop-opacity=".05"/><stop offset="1" stop-color="#ed0331" stop-opacity="0"/></radialGradient>
+              </defs>
+              <rect width="1280" height="760" fill="#0c0c0f"/>
+              <rect width="1280" height="760" fill="url(#pi-grid)"/>
+              <rect width="1280" height="760" fill="url(#pi-glow)"/>
+              <!-- LinkedIn profile -->
+              <rect x="40" y="32" width="600" height="700" rx="18" fill="#111114" stroke="rgba(255,255,255,.1)"/>
+              <rect x="40" y="32" width="600" height="96" rx="18" fill="rgba(255,255,255,.05)"/>
+              <circle cx="120" cy="136" r="46" fill="#1c1c21" stroke="#22c55e" stroke-width="4"/>
+              <circle cx="120" cy="124" r="16" fill="rgba(255,255,255,.25)"/>
+              <path d="M94 160c6-16 16-22 26-22s20 6 26 22" fill="rgba(255,255,255,.25)"/>
+              <rect x="80" y="170" width="80" height="22" rx="11" fill="#22c55e"/>
+              <text x="120" y="186" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="700" font-size="12" fill="#052e16">#HIRING</text>
+              <text x="186" y="164" font-family="Outfit,Poppins,sans-serif" font-weight="700" font-size="26" fill="#fafafa">Rahul Sharma</text>
+              <text x="186" y="192" font-family="Poppins,sans-serif" font-size="16" fill="#a1a1aa">CTO at XYZ Technologies</text>
+              <g fill="rgba(255,255,255,.08)"><rect x="80" y="222" width="300" height="9" rx="4.5"/><rect x="80" y="244" width="220" height="9" rx="4.5"/></g>
+              <rect x="80" y="272" width="520" height="72" rx="12" fill="rgba(237,3,49,.06)" stroke="rgba(237,3,49,.35)"/>
+              <text x="100" y="302" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="16" fill="#fafafa">We're hiring backend engineers and a QA lead</text>
+              <text x="100" y="328" font-family="Poppins,sans-serif" font-size="13" fill="#71717a">5 days ago · 128 reactions</text>
+              <!-- Side panel -->
+              <rect x="690" y="32" width="550" height="700" rx="18" fill="#111114" stroke="rgba(255,255,255,.12)"/>
+              <rect x="720" y="56" width="36" height="36" rx="9" fill="#ed0331"/>
+              <text x="738" y="80" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="800" font-size="15" fill="#fff">PI</text>
+              <text x="770" y="81" font-family="Outfit,Poppins,sans-serif" font-weight="700" font-size="20" fill="#fafafa">Prospect Intelligence</text>
+              <text x="720" y="130" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="13" letter-spacing="1.5" fill="#a1a1aa">HIRING INTENT</text>
+              <rect x="720" y="144" width="360" height="12" rx="6" fill="rgba(255,255,255,.08)"/>
+              <rect x="720" y="144" width="295" height="12" rx="6" fill="#ed0331"/>
+              <text x="1100" y="156" font-family="Outfit,Poppins,sans-serif" font-weight="800" font-size="22" fill="#fafafa">82</text>
+              <text x="1140" y="156" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="16" fill="#fca5a5">High</text>
+              <g font-family="Poppins,sans-serif" font-size="15" fill="#e4e4e7">
+                <path d="M722 190l5 5 9-10" fill="none" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="748" y="195">Hiring post · 5 days ago</text>
+                <path d="M722 222l5 5 9-10" fill="none" stroke="#22c55e" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="748" y="227">Profile shows a #HIRING badge</text>
+              </g>
+              <rect x="1106" y="178" width="104" height="24" rx="12" fill="rgba(56,189,248,.1)" stroke="rgba(56,189,248,.45)"/>
+              <text x="1158" y="194" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="11" letter-spacing="1" fill="#7dd3fc">OBSERVED</text>
+              <path d="M720 252H1210" stroke="rgba(255,255,255,.08)"/>
+              <text x="720" y="282" font-family="Poppins,sans-serif" font-size="14" fill="#a1a1aa">Work email</text>
+              <text x="830" y="282" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="15" fill="#fafafa">rahul@xyz.com</text>
+              <text x="1210" y="282" text-anchor="end" font-family="Outfit,Poppins,sans-serif" font-weight="600" font-size="13" fill="#86efac">valid · verified</text>
+              <rect x="720" y="302" width="490" height="44" rx="10" fill="#ed0331"/>
+              <text x="965" y="330" text-anchor="middle" font-family="Outfit,Poppins,sans-serif" font-weight="700" font-size="17" fill="#fff">Send to Instantly</text>
+              <g fill="rgba(255,255,255,.07)"><rect x="720" y="372" width="490" height="10" rx="5"/><rect x="720" y="396" width="380" height="10" rx="5"/><rect x="720" y="420" width="430" height="10" rx="5"/></g>
+            </svg>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="card-n">03 / OUTREACH</div>
+          <h3>Prospect Intelligence</h3>
+          <p class="proj-line">A Chrome extension that turns the LinkedIn profile you're viewing into an enriched, evidence-backed lead in an Instantly campaign.</p>
+          <ul>
+            <li><b>Hiring intent:</b> 0–100 score from a rules engine plus Gemini, every signal tied to the post or line behind it.</li>
+            <li><b>On-demand contacts</b> from RevSpot, an editable lead preview and duplicate-safe sends or updates.</li>
+            <li><b>Team-ready:</b> access keys, audit log and a live Google Sheets backup of every action; 96 tests.</li>
+          </ul>
+          <div class="chips"><span class="chip">Chrome MV3</span><span class="chip">React</span><span class="chip">Fastify</span><span class="chip">PostgreSQL</span><span class="chip">Gemini API</span></div>
+          <div class="proj-links">
+            <a href="https://intent-scrapping.vercel.app" target="_blank" rel="noopener" class="btn btn-p"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 4h6v6"/><path d="M20 4 10 14"/><path d="M19 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>Live app</a>
+            <span class="proj-priv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>Private repository</span>
+            <span class="proj-note">Access key required</span>
           </div>
         </div>
       </article>
